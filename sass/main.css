@@ -72,7 +72,7 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 1rem 0 1.5rem;
 }
 
 .concept-block {
@@ -89,6 +89,7 @@ header .logo {
   -webkit-box-shadow: 0px 0px 0.2rem #f6f6f6;
           box-shadow: 0px 0px 0.2rem #f6f6f6;
   border-radius: 1rem;
+  padding: 0.5rem 0;
 }
 
 .concept-block-circle {
@@ -106,5 +107,15 @@ header .logo {
           align-items: center;
   border-radius: 50%;
   color: white;
+  margin-left: -0.5rem;
+}
+
+.concept-block-icon {
+  padding: 0 1rem;
+  color: grey;
+}
+
+.concept-block:hover {
+  background: #ff79da;
 }
 /*# sourceMappingURL=main.css.map */
