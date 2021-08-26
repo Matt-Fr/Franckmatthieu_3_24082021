@@ -1,5 +1,25 @@
+$purple: #9356dc;
+$pink: #ff79da;
+$mint: #99e2d0;
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  .logo {
+    margin: 1rem;
+  }
+}
+.location {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  padding: 1rem 0;
+  &-pin {
+    padding-right: 1rem;
+  }
 }

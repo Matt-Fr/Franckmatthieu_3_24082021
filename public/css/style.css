@@ -1,7 +1,25 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header .logo {
+  margin: 1rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  padding: 1rem 0;
+}
+.location-pin {
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
