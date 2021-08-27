@@ -1,3 +1,9 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -75,6 +81,68 @@ header .logo {
 
 .concept-block:hover {
   background: #ff79da;
+}
+
+.section-restaurant {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15rem 15rem 15rem 15rem;
+  place-content: center;
+  grid-gap: 1rem;
+  padding: 1rem;
+  background: #eaeaea;
+}
+.section-restaurant-link {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 1rem;
+}
+.section-restaurant-link-img {
+  overflow: hidden;
+  object-fit: cover;
+  height: 70%;
+  min-width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.section-restaurant-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+  margin: 0 1rem;
+}
+.section-restaurant-link-container-icon {
+  font-size: 1.5rem;
+}
+.section-restaurant-link-container-text {
+  display: flex;
+  flex-direction: column;
+}
+.section-restaurant-link-container-text-title {
+  margin: 0;
+}
+
+.section-restaurant-link-one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.section-restaurant-link-two {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.section-restaurant-link-three {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.section-restaurant-link-four {
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 
 /*# sourceMappingURL=style.css.map */
