@@ -45,6 +45,7 @@ header .logo {
   border-radius: 2rem;
   background: #9356dc;
   color: white;
+  border: none;
 }
 
 .concept {
@@ -80,17 +81,19 @@ header .logo {
 }
 
 .concept-block:hover {
-  background: #ff79da;
+  background: #f5edff;
 }
 
+.section {
+  padding: 1rem;
+  background: #eaeaea;
+}
 .section-restaurant {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 15rem 15rem 15rem 15rem;
   place-content: center;
   grid-gap: 1rem;
-  padding: 1rem;
-  background: #eaeaea;
 }
 .section-restaurant-link {
   min-width: 100%;
@@ -98,6 +101,7 @@ header .logo {
   flex-wrap: wrap;
   background: white;
   border-radius: 1rem;
+  text-decoration: none;
 }
 .section-restaurant-link-img {
   overflow: hidden;
@@ -143,6 +147,28 @@ header .logo {
 .section-restaurant-link-four {
   grid-column: 1/2;
   grid-row: 4/5;
+}
+
+.footer {
+  background: #353535;
+  color: white;
+  padding: 1.3rem;
+}
+.footer-block-logo {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+.footer-block-text {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-block-text-link {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+.footer-block-text-link-icon {
+  width: 0.5rem;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
