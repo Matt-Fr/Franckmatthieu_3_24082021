@@ -66,9 +66,12 @@ header .logo {
 .search-restaurant-button {
   padding: 1rem;
   border-radius: 2rem;
-  background: #9356dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f074da), to(#aa5ddc));
+  background: linear-gradient(#f074da, #aa5ddc);
   color: white;
   border: none;
+  -webkit-box-shadow: 0px 5px 10px -2px #bcbcbc;
+          box-shadow: 0px 5px 10px -2px #bcbcbc;
 }
 
 .concept {
@@ -79,7 +82,7 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 1rem 0 1.5rem;
+  margin: 1rem 1rem 2rem 1.5rem;
 }
 
 .concept-block {
@@ -97,6 +100,8 @@ header .logo {
           box-shadow: 0px 0px 0.2rem #f6f6f6;
   border-radius: 1rem;
   padding: 0.5rem 0;
+  -webkit-box-shadow: 0px 5px 10px -2px #bcbcbc;
+          box-shadow: 0px 5px 10px -2px #bcbcbc;
 }
 
 .concept-block-circle {
@@ -122,12 +127,16 @@ header .logo {
   color: grey;
 }
 
+.concept-block-icon:hover {
+  color: #9356dc;
+}
+
 .concept-block:hover {
   background: #f5edff;
 }
 
 .section {
-  padding: 1rem;
+  padding: 3rem 1rem;
   background: #eaeaea;
 }
 
@@ -152,6 +161,9 @@ header .logo {
   background: white;
   border-radius: 1rem;
   text-decoration: none;
+  color: black;
+  -webkit-box-shadow: 0px 5px 10px -2px #bcbcbc;
+          box-shadow: 0px 5px 10px -2px #bcbcbc;
 }
 
 .section-restaurant-link-img {

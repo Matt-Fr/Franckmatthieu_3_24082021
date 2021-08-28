@@ -44,15 +44,16 @@ header {
   &-button {
     padding: 1rem;
     border-radius: 2rem;
-    background: $purple;
+    background: linear-gradient(#f074da, #aa5ddc);
     color: white;
     border: none;
+    box-shadow: 0px 5px 10px -2px #bcbcbc;
   }
 }
 .concept {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem 0 1.5rem;
+  margin: 1rem 1rem 2rem 1.5rem;
 
   &-block {
     background: #f6f6f6;
@@ -64,6 +65,8 @@ header {
     box-shadow: 0px 0px 0.2rem #f6f6f6;
     border-radius: 1rem;
     padding: 0.5rem 0;
+
+    box-shadow: 0px 5px 10px -2px #bcbcbc;
 
     &-circle {
       background: $purple;
@@ -82,11 +85,14 @@ header {
     }
   }
 }
+.concept-block-icon:hover {
+  color: $purple;
+}
 .concept-block:hover {
   background: #f5edff;
 }
 .section {
-  padding: 1rem;
+  padding: 3rem 1rem;
   background: #eaeaea;
 
   &-restaurant {
@@ -103,6 +109,8 @@ header {
       background: white;
       border-radius: 1rem;
       text-decoration: none;
+      color: black;
+      box-shadow: 0px 5px 10px -2px #bcbcbc;
 
       &-img {
         overflow: hidden;
