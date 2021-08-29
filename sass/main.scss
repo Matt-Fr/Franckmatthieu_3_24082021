@@ -203,3 +203,19 @@ header {
   object-fit: cover;
   width: 100%;
 }
+.main {
+  background: #eaeaea;
+  border-radius: 2rem 2rem 0 0;
+
+  &-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+
+    &-title {
+      font-family: "Shrikhand", cursive;
+      font-size: 1.7rem;
+    }
+  }
+}
