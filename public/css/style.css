@@ -190,7 +190,7 @@ header .logo {
   margin-right: 1rem;
 }
 
-.main-img {
+.top-img {
   height: 20rem;
   overflow: hidden;
   object-fit: cover;
@@ -198,18 +198,54 @@ header .logo {
 }
 
 .main {
-  background: #eaeaea;
+  background: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
+  margin-top: -3rem;
+  position: relative;
 }
 .main-name {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 .main-name-title {
   font-family: "Shrikhand", cursive;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+}
+.main-block {
+  margin: 0 1rem;
+}
+.main-block-title {
+  margin: 1.3rem 0;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  text-decoration-color: #99e2d0;
+  text-decoration-thickness: 0.2rem;
+}
+.main-block-dish {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.7rem;
+  background: white;
+  box-shadow: 0px 5px 10px -2px #bcbcbc;
+  padding: 1rem;
+}
+.main-block-dish-description-name {
+  font-weight: bold;
+}
+.main-block-dish-description-text {
+  margin: 0;
+  font-weight: lighter;
+}
+.main-block-dish-price {
+  font-weight: bold;
+  display: flex;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
