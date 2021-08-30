@@ -363,4 +363,18 @@ header .logo {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+.div-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
+}
+
+.div-button-order {
+  padding: 1rem 3rem;
+}
 /*# sourceMappingURL=main.css.map */

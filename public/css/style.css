@@ -248,4 +248,13 @@ header .logo {
   align-self: flex-end;
 }
 
+.div-button {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.div-button-order {
+  padding: 1rem 3rem;
+}
+
 /*# sourceMappingURL=style.css.map */
