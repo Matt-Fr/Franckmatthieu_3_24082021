@@ -127,12 +127,13 @@ header .logo {
   color: grey;
 }
 
-.concept-block-icon:hover {
-  color: #9356dc;
-}
-
 .concept-block:hover {
   background: #f5edff;
+  cursor: pointer;
+}
+
+.concept-block:hover .concept-block-icon {
+  color: #9356dc;
 }
 
 .section {

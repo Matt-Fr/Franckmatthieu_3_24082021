@@ -85,11 +85,13 @@ header {
     }
   }
 }
-.concept-block-icon:hover {
-  color: $purple;
-}
+
 .concept-block:hover {
   background: #f5edff;
+  cursor: pointer;
+  .concept-block-icon {
+    color: $purple;
+  }
 }
 .section {
   padding: 3rem 1rem;
