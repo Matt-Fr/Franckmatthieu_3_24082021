@@ -137,15 +137,41 @@ header .logo {
   width: 100%;
   margin: 0 1rem;
 }
-.section-restaurant-link-container-icon {
-  font-size: 1.5rem;
-}
 .section-restaurant-link-container-text {
   display: flex;
   flex-direction: column;
 }
 .section-restaurant-link-container-text-title {
   margin: 0;
+}
+
+.container-heart {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.container-heart-one {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-heart-two {
+  font-size: 1.58rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f074da;
+  color: linear-gradient(5deg, #f074da 0%, #aa5ddc 100%);
+  opacity: 0%;
+}
+
+.container-heart-two:hover {
+  color: linear-gradient(#f074da, #aa5ddc);
+  opacity: 100%;
+  transition: opacity 250ms;
 }
 
 .section-restaurant-link-one {

@@ -140,9 +140,9 @@ header {
         width: 100%;
         margin: 0 1rem;
 
-        &-icon {
-          font-size: 1.5rem;
-        }
+        // &-icon {
+        //   font-size: 1.5rem;
+        // }
 
         &-text {
           display: flex;
@@ -154,6 +154,39 @@ header {
       }
     }
   }
+}
+
+.container-heart {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  &-one {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &-two {
+    font-size: 1.58rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(240, 116, 218);
+    color: linear-gradient(
+      5deg,
+      rgba(240, 116, 218, 1) 0%,
+      rgba(170, 93, 220, 1) 100%
+    );
+    opacity: 0%;
+  }
+}
+.container-heart-two:hover {
+  color: linear-gradient(#f074da, #aa5ddc);
+  opacity: 100%;
+  transition: opacity 250ms;
 }
 
 .section-restaurant-link-one {
