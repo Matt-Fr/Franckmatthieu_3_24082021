@@ -1,3 +1,13 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 html,
 body {
   max-width: 100%;
@@ -260,6 +270,7 @@ header .logo {
   background: white;
   box-shadow: 0px 5px 10px -2px #bcbcbc;
   padding: 1rem;
+  animation: slideUp 1s;
 }
 .main-block-dish-description-name {
   font-weight: bold;
