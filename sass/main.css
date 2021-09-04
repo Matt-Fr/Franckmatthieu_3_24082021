@@ -1,3 +1,29 @@
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 html,
 body {
   max-width: 100%;
@@ -203,10 +229,6 @@ header .logo {
   margin: 0 1rem;
 }
 
-.section-restaurant-link-container-icon {
-  font-size: 1.5rem;
-}
-
 .section-restaurant-link-container-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,6 +241,40 @@ header .logo {
 
 .section-restaurant-link-container-text-title {
   margin: 0;
+}
+
+.container-heart {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.container-heart-one {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container-heart-two {
+  font-size: 1.58rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #f074da;
+  color: linear-gradient(5deg, #f074da 0%, #aa5ddc 100%);
+  opacity: 0%;
+}
+
+.container-heart-two:hover {
+  color: linear-gradient(#f074da, #aa5ddc);
+  opacity: 100%;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
 .section-restaurant-link-one {
@@ -345,6 +401,10 @@ header .logo {
   -webkit-box-shadow: 0px 5px 10px -2px #bcbcbc;
           box-shadow: 0px 5px 10px -2px #bcbcbc;
   padding: 1rem;
+  -webkit-animation: slideUp 1s;
+          animation: slideUp 1s;
+  position: relative;
+  overflow: hidden;
 }
 
 .main-block-dish-description-name {
@@ -363,6 +423,53 @@ header .logo {
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-transition: -webkit-transform 330ms;
+  transition: -webkit-transform 330ms;
+  transition: transform 330ms;
+  transition: transform 330ms, -webkit-transform 330ms;
+}
+
+.main-block-dish-animation {
+  width: 4rem;
+  height: 100%;
+  background: #99e2d0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 -4rem;
+  -webkit-transition: -webkit-transform 330ms;
+  transition: -webkit-transform 330ms;
+  transition: transform 330ms;
+  transition: transform 330ms, -webkit-transform 330ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-block-dish-animation-circle {
+  color: white;
+  -webkit-transition: -webkit-transform 330ms;
+  transition: -webkit-transform 330ms;
+  transition: transform 330ms;
+  transition: transform 330ms, -webkit-transform 330ms;
+  font-size: 1.5rem;
+}
+
+.main-block-dish:hover .main-block-dish-animation,
+.main-block-dish:hover .main-block-dish-price {
+  -webkit-transform: translate(-4rem, 0);
+          transform: translate(-4rem, 0);
+}
+
+.main-block-dish:hover .main-block-dish-animation-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .div-button {
