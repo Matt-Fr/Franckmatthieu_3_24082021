@@ -274,10 +274,7 @@ header {
       font-size: 1.2rem;
       font-weight: lighter;
       text-transform: uppercase;
-      text-decoration: underline;
-      text-underline-offset: 0.6rem;
-      text-decoration-color: $mint;
-      text-decoration-thickness: 0.2rem;
+      position: relative;
     }
     &-dish {
       margin: 1rem 0;
@@ -292,6 +289,10 @@ header {
       overflow: hidden;
 
       &-description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         &-name {
           font-weight: bold;
         }
@@ -323,11 +324,25 @@ header {
           color: white;
           transition: transform 330ms;
           font-size: 1.5rem;
+          position: absolute;
+          left: 0;
         }
       }
     }
   }
 }
+
+.main-block-title::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background: $mint;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  bottom: -0.5rem;
+}
+
 .main-block-dish:hover {
   .main-block-dish-animation,
   .main-block-dish-price {
@@ -346,5 +361,45 @@ header {
   padding: 2rem 0;
   &-order {
     padding: 1rem 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .concept {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-title {
+      width: 100%;
+    }
+    &-block {
+      width: 28%;
+    }
+  }
+  .section-restaurant {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15rem 15rem;
+  }
+  .section-restaurant-link-one {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  .section-restaurant-link-two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .section-restaurant-link-three {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .section-restaurant-link-four {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .container-block {
+    display: flex;
+  }
+  .main-block {
+    width: 30%;
   }
 }

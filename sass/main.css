@@ -407,6 +407,12 @@ header .logo {
   overflow: hidden;
 }
 
+.main-block-dish-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .main-block-dish-description-name {
   font-weight: bold;
 }
