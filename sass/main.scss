@@ -13,6 +13,63 @@ $mint: #99e2d0;
   }
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 300;
+  animation: loading-page 2s linear forwards;
+  background: white;
+}
+.loader::after {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  z-index: 300;
+
+  border: 0.6rem solid $purple;
+  border-top-color: $pink;
+  border-bottom-color: $mint;
+  border-radius: 50%;
+  animation: loading 2s linear forwards;
+  transition: 2s;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(2turn);
+
+    z-index: 300;
+  }
+  99% {
+    z-index: 300;
+  }
+  100% {
+    z-index: -300;
+  }
+}
+@keyframes loading-page {
+  0% {
+    opacity: 1;
+    z-index: 300;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  99% {
+    opacity: 0;
+    z-index: 300;
+  }
+  100% {
+    opacity: 0;
+    z-index: -300;
+  }
+}
+
 html,
 body {
   max-width: 100%;
