@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    margin: 1rem;
+  }
+}
+.header-arrow {
+  position: absolute;
+  left: 0;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: inherit;
+}

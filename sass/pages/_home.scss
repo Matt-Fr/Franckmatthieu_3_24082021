@@ -1,0 +1,210 @@
+.location {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  padding: 1rem 0;
+  &-pin {
+    padding-right: 1rem;
+  }
+}
+
+.search-restaurant {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 17rem;
+  &-title,
+  &-text {
+    margin: 0 3rem;
+    text-align: center;
+  }
+  &-button {
+    padding: 1rem;
+    border-radius: 2rem;
+    background: linear-gradient(#f074da, #aa5ddc);
+    color: white;
+    border: none;
+    box-shadow: 0px 5px 10px -2px #bcbcbc;
+  }
+}
+.concept {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 2rem 1.5rem;
+
+  &-block {
+    background: #f6f6f6;
+    margin: 1rem 0;
+    display: flex;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 0.2rem #f6f6f6;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+
+    box-shadow: 0px 5px 10px -2px #bcbcbc;
+
+    &-circle {
+      background: $purple;
+      width: 1.4rem;
+      height: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: white;
+      margin-left: -0.5rem;
+    }
+    &-icon {
+      padding: 0 1rem;
+      color: grey;
+    }
+  }
+}
+
+.concept-block:hover {
+  background: #f5edff;
+  cursor: pointer;
+  .concept-block-icon {
+    color: $purple;
+  }
+}
+.section {
+  padding: 3rem 1rem;
+  background: #eaeaea;
+
+  &-restaurant {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 15rem 15rem 15rem;
+    place-content: center;
+    grid-gap: 1rem;
+
+    &-link {
+      min-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 1rem;
+      text-decoration: none;
+      color: black;
+      box-shadow: 0px 5px 10px -2px #bcbcbc;
+      position: relative;
+
+      &-img {
+        overflow: hidden;
+        object-fit: cover;
+        height: 70%;
+        min-width: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+      &-new {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        color: #008766;
+        background: $mint;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+        border-radius: 0.2rem;
+      }
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+        margin: 0 1rem;
+
+        // &-icon {
+        //   font-size: 1.5rem;
+        // }
+
+        &-text {
+          display: flex;
+          flex-direction: column;
+          &-title {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container-heart {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  &-one {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &-two {
+    font-size: 1.58rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(240, 116, 218);
+    color: linear-gradient(
+      5deg,
+      rgba(240, 116, 218, 1) 0%,
+      rgba(170, 93, 220, 1) 100%
+    );
+    opacity: 0%;
+  }
+}
+.container-heart-two:hover {
+  color: linear-gradient(#f074da, #aa5ddc);
+  opacity: 100%;
+  transition: opacity 250ms;
+}
+
+@media screen and (min-width: 768px) {
+  .concept {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-title {
+      width: 100%;
+    }
+    &-block {
+      width: 28%;
+    }
+  }
+
+  .section-restaurant {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15rem 15rem;
+  }
+  .section-restaurant-link-one {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  .section-restaurant-link-two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .section-restaurant-link-three {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .section-restaurant-link-four {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .container-block {
+    display: flex;
+  }
+  .main-block {
+    width: 30%;
+  }
+}

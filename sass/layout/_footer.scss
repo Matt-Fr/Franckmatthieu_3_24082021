@@ -1,0 +1,28 @@
+.footer {
+  background: #353535;
+  color: white;
+  padding: 1.3rem;
+  &-block {
+    &-logo {
+      font-family: "Shrikhand", cursive;
+      margin: 0;
+    }
+    &-text {
+      list-style-type: none;
+      padding: 0;
+      &-link {
+        display: block;
+        padding-bottom: 0.5rem;
+        cursor: pointer;
+        &-icon {
+          width: 0.5rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+.contact {
+  color: inherit;
+  text-decoration: none;
+}
