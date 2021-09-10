@@ -58,9 +58,9 @@
   height: 5rem;
   z-index: 300;
 
-  border: 0.6rem solid $purple;
-  border-top-color: $pink;
-  border-bottom-color: $mint;
+  border: 0.6rem solid $color-primary;
+  border-top-color: $color-secondary;
+  border-bottom-color: $color-third;
   border-radius: 50%;
   animation: loading 2s linear forwards;
   transition: 2s;
