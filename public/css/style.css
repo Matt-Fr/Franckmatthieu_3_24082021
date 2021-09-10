@@ -419,6 +419,7 @@ header .logo {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 80%;
 }
 .main-block-dish-description-name {
   font-weight: bold;
@@ -426,6 +427,9 @@ header .logo {
 .main-block-dish-description-text {
   margin: 0;
   font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .main-block-dish-price {
   font-weight: bold;
@@ -450,6 +454,11 @@ header .logo {
   color: white;
   transition: transform 330ms;
   font-size: 1.5rem;
+}
+
+.main-block-dish:hover .main-block-dish-description {
+  width: calc(100% - 40%);
+  transition: 330ms;
 }
 
 .main-block-title::after {
