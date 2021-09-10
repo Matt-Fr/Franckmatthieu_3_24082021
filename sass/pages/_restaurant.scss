@@ -21,7 +21,15 @@
       font-size: 1.6rem;
     }
   }
-
+  .block_one {
+    animation: slideUp 0.5s;
+  }
+  .block_two {
+    animation: slideUp 1s;
+  }
+  .block_three {
+    animation: slideUp 1.5s;
+  }
   &-block {
     margin: 0 1rem;
     &-title {
@@ -39,7 +47,7 @@
       background: white;
       box-shadow: 0px 5px 10px -2px #bcbcbc;
       padding: 1rem;
-      animation: slideUp 1s;
+
       position: relative;
       overflow: hidden;
 

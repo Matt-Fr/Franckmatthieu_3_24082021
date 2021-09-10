@@ -1,3 +1,14 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
 @-webkit-keyframes loading {
   0% {
     -webkit-transform: rotate(2turn);
@@ -239,6 +250,7 @@ header .logo {
 
 .div-button-order {
   padding: 1rem 3rem;
+  cursor: pointer;
 }
 
 .location {
@@ -565,6 +577,21 @@ header .logo {
   font-size: 1.6rem;
 }
 
+.main .block_one {
+  -webkit-animation: slideUp 0.5s;
+          animation: slideUp 0.5s;
+}
+
+.main .block_two {
+  -webkit-animation: slideUp 1s;
+          animation: slideUp 1s;
+}
+
+.main .block_three {
+  -webkit-animation: slideUp 1.5s;
+          animation: slideUp 1.5s;
+}
+
 .main-block {
   margin: 0 1rem;
 }
@@ -590,8 +617,6 @@ header .logo {
   -webkit-box-shadow: 0px 5px 10px -2px #bcbcbc;
           box-shadow: 0px 5px 10px -2px #bcbcbc;
   padding: 1rem;
-  -webkit-animation: slideUp 1s;
-          animation: slideUp 1s;
   position: relative;
   overflow: hidden;
 }
@@ -665,16 +690,5 @@ header .logo {
   z-index: 20;
   left: 0;
   bottom: -0.5rem;
-}
-
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

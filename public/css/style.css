@@ -1,3 +1,14 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
 @keyframes loading {
   0% {
     transform: rotate(2turn);
@@ -145,6 +156,7 @@ header .logo {
 }
 .div-button-order {
   padding: 1rem 3rem;
+  cursor: pointer;
 }
 
 .location {
@@ -372,6 +384,15 @@ header .logo {
   font-family: "Shrikhand", cursive;
   font-size: 1.6rem;
 }
+.main .block_one {
+  animation: slideUp 0.5s;
+}
+.main .block_two {
+  animation: slideUp 1s;
+}
+.main .block_three {
+  animation: slideUp 1.5s;
+}
 .main-block {
   margin: 0 1rem;
 }
@@ -390,7 +411,6 @@ header .logo {
   background: white;
   box-shadow: 0px 5px 10px -2px #bcbcbc;
   padding: 1rem;
-  animation: slideUp 1s;
   position: relative;
   overflow: hidden;
 }
@@ -440,17 +460,6 @@ header .logo {
   z-index: 20;
   left: 0;
   bottom: -0.5rem;
-}
-
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
