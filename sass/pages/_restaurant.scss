@@ -55,7 +55,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 80%;
+        width: 100%;
 
         &-name {
           font-weight: bold;
@@ -97,7 +97,7 @@
   }
 }
 .main-block-dish:hover .main-block-dish-description {
-  width: calc(100% - 40%);
+  width: calc(100% - 35%);
   transition: 330ms;
 }
 
