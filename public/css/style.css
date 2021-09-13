@@ -83,6 +83,15 @@ body {
   transform: rotate(360deg);
 }
 
+@keyframes fill-up {
+  0% {
+    width: 100%;
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -310,15 +319,16 @@ header .logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #f074da;
-  color: linear-gradient(5deg, #f074da 0%, #aa5ddc 100%);
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0%;
 }
 
 .container-heart-two:hover {
-  color: linear-gradient(#f074da, #aa5ddc);
   opacity: 100%;
-  transition: opacity 250ms;
+  transition: opacity 500ms;
 }
 
 @media screen and (min-width: 768px) {

@@ -159,19 +159,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    color: rgb(240, 116, 218);
-    color: linear-gradient(
-      5deg,
-      rgba(240, 116, 218, 1) 0%,
-      rgba(170, 93, 220, 1) 100%
-    );
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity: 0%;
   }
 }
 .container-heart-two:hover {
-  color: linear-gradient(#f074da, #aa5ddc);
   opacity: 100%;
-  transition: opacity 250ms;
+  transition: opacity 500ms;
 }
 
 @media screen and (min-width: 768px) {
