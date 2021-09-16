@@ -303,32 +303,31 @@ header .logo {
 
 .container-heart {
   position: relative;
-  width: 1.5rem;
   height: 1.5rem;
+  margin: 1rem;
 }
 .container-heart-one {
-  font-size: 1.5rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  font-size: 1.5rem;
 }
 .container-heart-two {
-  font-size: 1.58rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  max-height: 0;
+  transition: max-height 3s;
+  transform: scale(1.07);
+  z-index: 2;
+  font-size: 1.5rem;
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0%;
 }
 
-.container-heart-two:hover {
-  opacity: 100%;
-  transition: opacity 500ms;
+.container-heart:hover .container-heart-two {
+  max-height: 300px;
 }
 
 @media screen and (min-width: 768px) {
