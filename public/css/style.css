@@ -23,11 +23,11 @@ body {
 }
 @keyframes loading-page {
   0% {
-    opacity: 1;
+    opacity: 0.8;
     z-index: 300;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   99% {
     opacity: 0;
@@ -57,7 +57,7 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 300;
-  animation: loading-page 2s linear forwards;
+  animation: loading-page 1s linear forwards;
   background: white;
 }
 
@@ -70,8 +70,8 @@ body {
   border-top-color: #ff79da;
   border-bottom-color: #99e2d0;
   border-radius: 50%;
-  animation: loading 2s linear forwards;
-  transition: 2s;
+  animation: loading 1s linear forwards;
+  transition: 1s;
 }
 
 .main-block-dish:hover .main-block-dish-animation,
@@ -471,7 +471,7 @@ header .logo {
 }
 
 .main-block-dish:hover .main-block-dish-description {
-  width: calc(100% - 35%);
+  width: 65%;
   transition: 330ms;
 }
 
