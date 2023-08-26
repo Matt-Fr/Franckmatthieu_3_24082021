@@ -20,6 +20,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./public/css/style.css" />
+    <style>
+      a:link {
+        text-decoration: none !important;
+      }
+    </style>
     <title>0hmyfood</title>
   </head>
   <body>
@@ -47,9 +52,9 @@
         <p class="search-restaurant-text">
           Découvrez des restaurants d'exception, sélectionnés par nos soins
         </p>
-        <button class="search-restaurant-button">
+        <a class="search-restaurant-button" href="#restaurants">
           Explorez nos restaurants
-        </button>
+        </a>
       </div>
       <div class="concept">
         <h2 class="concept-title">Fonctionnement</h2>
@@ -78,7 +83,7 @@
 
       <!-- section restaurant -->
 
-      <section class="section">
+      <section class="section" id="restaurants">
         <h2 class="section-title">Restaurants</h2>
         <div class="section-restaurant">
           <a
